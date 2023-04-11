@@ -1,0 +1,14 @@
+/*selector{
+    propiedad:valor;
+}*/
+p{
+    color: #f00;
+}
+.red{
+    background-color: #f00;
+    width: 100px;
+    height: 200px;
+}
+#boton-pago{
+    background-color: #ff0;
+}
