@@ -1,14 +1,45 @@
 /*selector{
     propiedad:valor;
 }*/
-p{
-    color: #f00;
+/*
+    azul: #6F65F0
+    morado: #CF4CD4
+    salmon: #EA775F
+    beige: #D69D3C
+    amarillo: #F5EE5F
+    -----------------
+    --black: #000000ff;
+    --carmine: #9a031eff;
+    --ut-orange: #fb8b24ff;
+    --aureolin: #f4e409ff;
+    --ice-blue: #9cf6f6ff;
+    ------------------
+*/
+.container {
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.red{
-    background-color: #f00;
-    width: 100px;
-    height: 200px;
+.content{
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
 }
-#boton-pago{
-    background-color: #ff0;
+td {
+  border: solid 1px;
 }
