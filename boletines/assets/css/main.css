@@ -14,7 +14,31 @@
     --aureolin: #f4e409ff;
     --ice-blue: #9cf6f6ff;
     ------------------
+    rosa: #d500f9
 */
+
+/*@font-face {
+  font-family: nombreDeMiFuente;
+  src: url(archivoFuente/fuente.woff);
+}*/
+
+html{
+  font-family: 'Nunito', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #f12711;
+}
+.title{
+  text-transform: uppercase;
+}
+.paragraph{
+  line-height: 1.8em;
+  font-weight: 300;
+}
+.fa-star, .fa-star-half-stroke{
+  color: #ffc400;
+}
 .container {
   background: #f12711; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -33,13 +57,43 @@
   justify-content: center;
 }
 .content{
-    max-width: 960px;
-    max-height: 500px;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-
+  max-width: 960px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  /* box-shadow: diferenciaHorizontal diferenciaVertical desenfoque amplitud color; */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px px rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
 }
-td {
-  border: solid 1px;
+.table{
+  width: 100%;
+  border-spacing: 0;
+}
+.table td, .table th{
+  padding: 1em;
+  text-align: left;
+}
+.table tr:nth-child(even){
+  background-color: #fce5b3;
+}
+.title-item{
+    /*border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #C6426E;
+  */
+  border-bottom: solid 2px #f12711;
+  padding-bottom: 1em;
+  padding: arriba deracha abajo izquierda;
+  padding: arriba/abajo derecha/izquierda;
+}
+.position{
+  background-color: #f12711;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  /* border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em; */
 }
