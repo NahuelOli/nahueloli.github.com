@@ -1,7 +1,8 @@
-/*selector{
+/* 
+selector{
     propiedad:valor;
-}*/
-/*
+}
+
     azul: #6F65F0
     morado: #CF4CD4
     salmon: #EA775F
@@ -15,12 +16,12 @@
     --ice-blue: #9cf6f6ff;
     ------------------
     rosa: #d500f9
-*/
-/*@font-face {
+
+@font-face {
   font-family: nombreDeMiFuente;
   src: url(archivoFuente/fuente.woff);
-}*/
-/*especificidad  
+}
+especificidad  
   1. !important  
   2. style en HTML
 
@@ -29,40 +30,50 @@
   3. ID
   4. Clase, atributos y pseudoclases
   5. Tipo de etiqueta y pseudo elementos
-*/
-/*Posiciones
+
+Posiciones
   position: static | relative| absolute | fixed | sticky
 
   top bottom left right
-*/
-/*
+
+
   pseudoclases
     :hover cuando pasa el mouse por arriba
     :visited exclusivo de los links para cuando ya fue visitado
-    :active botones y links, cuando se presiona
- */
+    :active botones y links, cuando se presiona */
+
 html {
   font-family: "Nunito", sans-serif;
 }
+
+img{
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   color: #f12711;
 }
+
 a:hover{
   opacity: 0.8;
 }
+
 .title {
   text-transform: uppercase;
   text-align: center;
 }
+
 .paragraph {
   line-height: 1.8em;
   font-weight: 300;
 }
+
 .fa-star,
 .fa-star-half-stroke {
   color: #ffc400;
 }
+
 .container {
   background: #f12711; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -80,17 +91,36 @@ a:hover{
   align-items: center;
   justify-content: center;
 }
+
 .content {
   max-width: 960px;
-  max-height: 500px;
   width: 100%;
-  height: 100%;
+  height: 80vh;
   background-color: #fff;
   /* box-shadow: diferenciaHorizontal diferenciaVertical desenfoque amplitud color; */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 4px;
   position: relative;
-  padding: 1.8em;
+  overflow: scroll;
+}
+
+.content{
+  padding: 1em;
+}
+
+td{
+  display: block;
+  width: 100%;
+}
+
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f12711;
+}
+
+th{
+  display: none;
 }
 
 .actions {
@@ -98,6 +128,7 @@ a:hover{
   top: 1em;
   right: 1ex;
 }
+
 .close {
   height: 40px;
   width: 40px;
@@ -112,18 +143,22 @@ a:hover{
   align-items: center;
   justify-content: center;
 }
+
 .table {
   width: 100%;
   border-spacing: 0;
 }
+
 .table td,
 .table th {
   padding: 1em;
   text-align: left;
 }
+
 .table tr:nth-child(even) {
   background-color: #fce5b3;
 }
+
 .title-item {
   /*border-bottom-style: solid;
   border-width: 2px;
@@ -135,23 +170,54 @@ a:hover{
   /* padding: arriba derecha abajo izquierda;
   padding: arriba/abajo derecha/izquierda; */
 }
+
 .address{
   font-weight: bold;
   color: #f12711;
   font-size: 1.2em;
+  margin-top: 2em;
+  display: inline-block;
 }
+
 .main-image{
   float: left;
   margin-right: 1em;
 }
+
 .position {
   background-color: #f5af19;
   color: white;
-  padding: 10px;
+  padding: 0.5em;
   border-radius: 4px;
   /* border-top-left-radius: 2em;
   border-top-right-radius: 2em;
   border-bottom-left-radius: 2em;
   border-bottom-right-radius: 2em; */
   margin-right: 0.5em;
+}
+
+@media (min-width:900px) {
+  th{
+    display: table-cell;
+  }
+
+  td{
+    display: table-cell;
+    width: auto;
+  }
+
+  td:nth-of-type(1){
+    font-size:1em;
+  }
+
+  .content{
+    padding: 1.8em;
+  }
+
+}
+
+@media (min-height:550px){
+  .content{
+    height: 500px;
+  }
 }
