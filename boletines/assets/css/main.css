@@ -35,6 +35,12 @@
 
   top bottom left right
 */
+/*
+  pseudoclases
+    :hover cuando pasa el mouse por arriba
+    :visited exclusivo de los links para cuando ya fue visitado
+    :active botones y links, cuando se presiona
+ */
 html {
   font-family: "Nunito", sans-serif;
 }
@@ -42,8 +48,12 @@ a {
   text-decoration: none;
   color: #f12711;
 }
+a:hover{
+  opacity: 0.8;
+}
 .title {
   text-transform: uppercase;
+  text-align: center;
 }
 .paragraph {
   line-height: 1.8em;
@@ -80,6 +90,7 @@ a {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 4px;
   position: relative;
+  padding: 1.8em;
 }
 
 .actions {
@@ -118,10 +129,20 @@ a {
   border-width: 2px;
   border-color: #C6426E;
   */
+  font-size: 2em;
   border-bottom: solid 2px #f12711;
   padding-bottom: 1em;
-  padding: arriba derecha abajo izquierda;
-  padding: arriba/abajo derecha/izquierda;
+  /* padding: arriba derecha abajo izquierda;
+  padding: arriba/abajo derecha/izquierda; */
+}
+.address{
+  font-weight: bold;
+  color: #f12711;
+  font-size: 1.2em;
+}
+.main-image{
+  float: left;
+  margin-right: 1em;
 }
 .position {
   background-color: #f5af19;
@@ -132,4 +153,5 @@ a {
   border-top-right-radius: 2em;
   border-bottom-left-radius: 2em;
   border-bottom-right-radius: 2em; */
+  margin-right: 0.5em;
 }
